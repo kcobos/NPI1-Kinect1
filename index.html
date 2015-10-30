@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Npi1-kinect1 : Capture positions on Kinect1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Npi1-kinect1</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/kcobos/NPI1-Kinect1">View on GitHub</a>
+
+          <h1 id="project_title">Npi1-kinect1</h1>
+          <h2 id="project_tagline">Capture positions on Kinect1</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/kcobos/NPI1-Kinect1/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/kcobos/NPI1-Kinect1/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="atracados" class="anchor" href="#atracados" aria-hidden="true"><span class="octicon octicon-link"></span></a>Atracados</h1>
+
+<h2>
+<a id="npi-kinect1" class="anchor" href="#npi-kinect1" aria-hidden="true"><span class="octicon octicon-link"></span></a>NPI-Kinect1</h2>
+
+<p>Este proyecto ha sido realizado en Granada, 30/10/2015 por:</p>
+
+<ul>
+<li>Jose Antonio Jiménez Montañez</li>
+<li>Carlos Cobos Suárez</li>
+</ul>
+
+<h3>
+<a id="descripción" class="anchor" href="#descripci%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Descripción</h3>
+
+<p>En este proyecto se ha elaborado un juego que consiste en el que el jugador tiene que ir capturando monedas que salen aleatoriamente en su entorno.
+Para ello, al comenzar el juego, el jugador tiene que empezar en una posición concreta que se indica en el juego a través de una animación si se presiona la tecla "h" en el juego.</p>
+
+<p>Conforme el juego avanza, van a ir saliendo más y más monedas. Si el jugador captura determinadas monedas va a disponer de un bonus que se activará a través de un gesto. Este bonus, capturará todas las monedas que están en la pantalla para que el jugador obtenga más puntuación.</p>
+
+<h3>
+<a id="solución-diseñada" class="anchor" href="#soluci%C3%B3n-dise%C3%B1ada" aria-hidden="true"><span class="octicon octicon-link"></span></a>Solución diseñada</h3>
+
+<p>Para desarrollar este proyecto, hemos optado por programar en C++ añandiéndole las librerías de Kinect y OpenCV.
+Las librerías de Kinect han sido añadidas ya que este juego ha sido desarrollado para este dispositivo por lo que es necesario disponer de una API para interactuar con este.
+Para el dibujo de las imágenes en pantalla así como las comprobaciones del esqueleto para las posturas y la interacción con las monedas hemos decidido usar OpenCV.</p>
+
+<h3>
+<a id="errores-frecuentes" class="anchor" href="#errores-frecuentes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Errores frecuentes</h3>
+
+<ul>
+<li>Dificultad para concatenar matrices si estas no son iguales en OpenCV</li>
+<li>Tipo de dato para la profundidad en la función de transformación de coordenadas de Kinect a ventana</li>
+<li>Calibrar el esquleto tomado de la API de Kinect a mano</li>
+<li>Escritura y lectura de estructuras de puntos de Kinect en ficheros</li>
+<li>Control del entorno para una buena captura de Kinect</li>
+</ul>
+
+<h3>
+<a id="destacados" class="anchor" href="#destacados" aria-hidden="true"><span class="octicon octicon-link"></span></a>Destacados</h3>
+
+<p>Para hacer las ilustración del manual de la primera posición, hemos capturado el esqueleto mientras estábamos haciendo la posición y hemos guardado la transición del esqueleto en un fichero. La ayuda de la primera posición es la reproducción de esta captura por lo que se verá como el esqueleto hace la postura.</p>
+
+<h3>
+<a id="referencias" class="anchor" href="#referencias" aria-hidden="true"><span class="octicon octicon-link"></span></a>Referencias</h3>
+
+<p>Al trabajar con una API nueva para nosotros como Kinect hemos tenido que consultar la información oficial de Microsoft:</p>
+
+<ul>
+<li><a href="https://msdn.microsoft.com/en-us/library/hh855364.aspx">https://msdn.microsoft.com/en-us/library/hh855364.aspx</a></li>
+</ul>
+
+<p>Asi como manuales y tutoriales de fuentes externas:</p>
+
+<ul>
+<li><a href="https://dharuiz.wordpress.com/">https://dharuiz.wordpress.com/</a></li>
+<li><a href="http://acodigo.blogspot.com.es/2013/05/dibujar-formas-y-texto.html">http://acodigo.blogspot.com.es/2013/05/dibujar-formas-y-texto.html</a></li>
+</ul>
+
+<p>También para manejar OpenCV hemos recurrido a su documentación:</p>
+
+<ul>
+<li><a href="http://docs.opencv.org/3.0.0/">http://docs.opencv.org/3.0.0/</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Npi1-kinect1 maintained by <a href="https://github.com/kcobos">kcobos</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
